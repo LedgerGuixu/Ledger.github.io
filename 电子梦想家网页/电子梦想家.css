@@ -1,0 +1,506 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("./字体/FZGDCTJW-R.TTF")
+}
+
+/* 自带标签 */
+body {
+  /* background-image: url('./img/海报.png'); */
+  background-size: cover;
+  margin: 0px;
+  font-family: "MyFont";
+}
+
+/* 主界面 */
+#main{
+  display: block;
+  opacity: 1;
+}
+
+/* 导航栏和海报部分 */
+#navigation_bar_poster>img{
+  width: 100%;
+  /* margin-left: 1%; */
+  object-fit: cover;
+  height: auto;
+
+}
+
+#navigation_bar{
+  position: absolute;
+  margin-top: 0;
+}
+
+#navigation_bar>img{
+  width: 7%;
+  margin-left: 3%;
+  margin-top: 2%;
+  float: left;
+}
+
+#text_remind{
+  margin-left: 12%;
+  margin-top: 0;
+  transition: all 0.3s;
+}
+
+#text_remind.active {
+  margin-left: 5%;
+  margin-top: 0;
+}
+
+#text_remind>ul>li{
+    float: left;
+    margin-left: 3%;
+    margin-top: 1.3%;
+    line-height: 100%;
+    text-align: center;
+}
+
+#text_remind>ul>li>a{
+  color: white; 
+  text-decoration: none;
+  font-size: 15px;
+}
+
+#search_box_login>input{
+  float: left;
+  border: none; /* 移除默认边框 */
+  border-bottom: 1px solid rgb(69, 198, 183); /* 添加蓝色底部边框，5px粗 */
+  outline: none; /* 移除默认的轮廓样式 */
+  margin-top: 1%;
+  background: transparent; /* 去除背景 */
+  margin-left: 3%;
+  width: 10%;
+  color: white;
+  transition: all 0.1s;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+#search_box_login>input:focus {
+  float: left;
+  border: none; /* 移除默认边框 */
+  border-bottom: 1px solid rgb(69, 198, 183); /* 添加蓝色底部边框，5px粗 */
+  outline: none; /* 移除默认的轮廓样式 */
+  margin-top: 1%;
+  background: transparent; /* 去除背景 */
+  margin-left: 3%;
+  width: 13%;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+#search_sign{
+  float: left;
+  width: 2%;
+  margin-top: 3px;
+}
+
+#login_text{
+  width: 7%;
+  float: left;
+  margin-left: 2%;
+}
+/* 导航栏和海报部分 */
+
+/* 套件详情 */
+#kit_details {
+  float: left;
+  width: 100%;
+  height: auto;
+  margin-top: -3px;
+  background-color: rgb(230, 230, 230);
+  /* overflow-y: auto; /* 添加垂直滚动条 */
+}
+
+#kit_details_intro {
+  width: 20%;
+  height: 350px;
+  /* background-color: white; */
+  float: left;
+  margin-left: 3%;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+#kit_details_intro>img {
+  width: 12%;
+  margin-top: 10px;
+  margin-left: 60px;
+}
+
+/* 无人机 */
+#unmanned_aerial_vehicle {
+  width: 20%;
+  height: 350px;
+  background-color: white;
+  margin-left: 4%;
+  float: left;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  background: url("./img/无人机2.png");
+  background-position: center top; 
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position:relative
+}
+
+#unmanned_aerial_vehicle>div {
+  position: absolute;
+  bottom: 0;
+  /* background-color: rgba(97, 229, 229, 0.1); */
+  height: 20%;
+  width: 100%;
+  float: bottom;
+  background: linear-gradient(to top, rgba(97, 229, 229, 0.6), rgba(97, 229, 229, 0.1));
+  border-radius: 20px 20px 0 0;
+  transition: 0.1s; 
+}
+
+/* 滑动改变无人机样式 */
+#unmanned_aerial_vehicle>div:hover {
+  position: absolute;
+  bottom: 0;
+  /* background-color: rgba(97, 229, 229, 0.1); */
+  height: 50%;
+  width: 100%;
+  float: bottom;
+  background: linear-gradient(to top, rgba(97, 229, 229, 0.6), rgba(97, 229, 229, 0.1));
+  border-radius: 20px 20px 0 0;
+}
+
+#unmanned_aerial_vehicle_content{
+  display: none;
+}
+
+#unmanned_aerial_vehicle>div:hover #unmanned_aerial_vehicle_content{
+
+  display: block;
+}
+/* 滑动改变无人机样式 */
+
+#unmanned_aerial_vehicle>div>b {
+  font-size: 40px;
+  letter-spacing: 10px;
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-top: 10px;
+}
+
+/* 智能小车 */
+#intelligent_car {
+  width: 20%;
+  height: 350px;
+  background-color: white;
+  margin-left: 5%;
+  float: left;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  background: url("./img/智能小车.png");
+  background-position: center top; 
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position:relative
+}
+
+#intelligent_car>div {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(97, 229, 229, 0.6), rgba(97, 229, 229, 0.1));
+  border-radius: 20px 20px 0 0;
+  height: 20%;
+  width: 100%;
+  float: bottom;
+  transition: 0.1s; 
+}
+
+/* 滑动改变智能小车样式 */
+#intelligent_car>div:hover {
+  position: absolute;
+  bottom: 0;
+  /* background-color: rgba(97, 229, 229, 0.1); */
+  height: 50%;
+  width: 100%;
+  float: bottom;
+  background: linear-gradient(to top, rgba(97, 229, 229, 0.6), rgba(97, 229, 229, 0.1));
+  border-radius: 20px 20px 0 0;
+}
+
+#intelligent_car_content{
+  display: none;
+}
+
+#intelligent_car>div:hover #intelligent_car_content{
+  display: block;
+}
+/* 滑动改变智能小车样式 */
+
+#intelligent_car>div>b {
+  font-size: 40px;
+  letter-spacing: 10px;
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-top: 10px;
+}
+
+/* 光立方 */
+#Light_Cube {
+  width: 20%;
+  height: 350px;
+  background-color: white;
+  margin-left: 5%;
+  float: left;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  background: url("./img/光立方.png");
+  background-position: center top; 
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position:relative
+}
+
+#Light_Cube>div {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(97, 229, 229, 0.6), rgba(97, 229, 229, 0.1));
+  border-radius: 20px 20px 0 0;
+  height: 20%;
+  width: 100%;
+  float: bottom;
+  transition: 0.1s; 
+}
+
+/* 滑动改变光立方样式 */
+#Light_Cube>div:hover {
+  position: absolute;
+  bottom: 0;
+  /* background-color: rgba(97, 229, 229, 0.1); */
+  height: 50%;
+  width: 100%;
+  float: bottom;
+  background: linear-gradient(to top, rgba(97, 229, 229, 0.6), rgba(97, 229, 229, 0.1));
+  border-radius: 20px 20px 0 0;
+}
+
+#Light_Cube_content{
+  display: none;
+}
+
+#Light_Cube>div:hover #Light_Cube_content{
+  display: block;
+}
+/* 滑动改变光立方样式 */
+
+#Light_Cube>div>b {
+  font-size: 40px;
+  letter-spacing: 10px;
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-top: 10px;
+}
+/* 课程详情 */
+
+/* 学员成果展示 */
+#achievement_exhibition{
+  float: left;
+  width: 100%;
+  height: auto;
+  background-color: rgb(230, 230, 230);
+}
+
+#achievement_exhibition>div{
+  width: 80%;
+  height: 450px;
+  /* background-color: rgb(153, 153, 153); */
+  float: left;
+  margin-left: 10%;
+  border-radius: 30px;
+  position: relative;
+  margin-top: 70px;
+  background-image: url("./img/学员成果展示.png");
+  background-position: center top; 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#achievement_exhibition>div>div{
+  position: absolute;
+  top: -10px;
+  left: 2%;
+  width: 100%;
+  height: 50px;
+}
+/* 学员成果展示 */
+
+/* 课程详情 */
+#course_details{
+  float: left;
+  width: 100%;
+  height: auto;
+  background-color: rgb(230, 230, 230);
+}
+/* 标题 */
+#course_details_title{
+  margin-top: 70px;
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+}
+
+#course_details_title>p>b{
+  font-size: 60px;
+  text-decoration: underline;
+  text-decoration-color: rgb(69, 198, 183); /* 设置下划线颜色 */
+  text-decoration-thickness: 5px; /* 设置下划线粗细 */
+  text-underline-offset: 20px; /* 设置下划线距离文字的距离 */
+}
+
+#course_details_title>p>span{
+  letter-spacing: 7px;
+}
+/* 内容 */
+#course_details_content{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+#course_details_content>div{
+  height: 540px;
+}
+
+.course_details_content_pic{
+  width: 100%;
+  float: left;
+  border-radius: 30px;
+  background-position: center top; 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* 课程详情 */
+
+/* 经验分享 */
+#experience_sharing{
+  float: left;
+  width: 100%;
+  height: auto;
+  background-color: rgb(230, 230, 230);
+}
+
+#experience_sharing>div{
+  width: 80%;
+  height: 450px;
+  /* background-color: rgb(153, 153, 153); */
+  float: left;
+  margin-left: 10%;
+  border-radius: 30px;
+  position: relative;
+  margin-top: 200px;
+  background-image: url("./img/经验分享.jpg");
+  background-position: center top; 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#experience_sharing>div>div{
+  position: absolute;
+  bottom: 150px;
+  left: 2%;
+  width: 100%;
+  height: 50px;
+}
+/* 经验分享 */
+
+/* 题目自测 */
+#subject_self_test{
+  float: left;
+  width: 100%;
+  height: auto;
+  background-color: rgb(230, 230, 230);
+}
+/* 标题 */
+#subject_self_test_title{
+  margin-top: 70px;
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+}
+
+#subject_self_test_title>p>b{
+  font-size: 60px;
+  text-decoration: underline;
+  text-decoration-color: rgb(69, 198, 183); /* 设置下划线颜色 */
+  text-decoration-thickness: 5px; /* 设置下划线粗细 */
+  text-underline-offset: 20px; /* 设置下划线距离文字的距离 */
+}
+
+#subject_self_test_title>p>span{
+  letter-spacing: 7px;
+}
+/* 内容 */
+#subject_self_test_content{
+  width: 100%;
+  height: auto;
+}
+
+#subject_self_test_content>div{
+  width: 25%;
+  height: 450px;
+  float: left;
+}
+
+.subject_self_test_content_pic{
+  width: 100%;
+  height: 250px;
+  float: left;
+  border-radius: 30px;
+  background-position: center top; 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* 题目自测 */
+
+/* 尾部栏 */
+#tail_group{
+  background-color: rgb(153, 153, 153);
+  width: 100%;
+  height: 100px;
+  float: left;
+}
+
+#tail_group>p>a{
+  color: black;
+  text-decoration: none;
+}
+/* 尾部栏 */
+/* 主界面 */
+
+/* 登录界面 */
+/* 账号密码登录界面 */
+#login_account_number{
+  display: none;
+  position: absolute;
+}
+/* 手机验证码登录界面 */
+#login_verification_code{
+  display: none;
+  position: absolute;
+}
+/* 登录界面 */
+
+/* 保底区域 */
+#footer {
+  background-color: white;
+  height: 1px;
+  width: auto;
+  float: left;
+}
+/* 保底区域 */

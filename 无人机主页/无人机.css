@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "MyFont";
+    src: url("./字体/FZGDCTJW-R.TTF")
+  }
+
+body {
+  background-image: url('./img/背景.png');
+  background-size: cover;
+  /* 可以根据需要调整图片尺寸适应屏幕 */
+}
+
+/* 无人机文字 */
+#unmanned_aerial_vehicle_text{
+    float: left;
+    width: 50%;
+    height: auto;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+/* 无人机模块资料 */
+#unmanned_aerial_vehicle_plate{
+    width: 35%;
+    margin-left: 2%;
+    margin-top: 20%;
+    height: auto;
+    float: left;
+    position: absolute;
+}
+
+/* 实践演示 */
+#practical_demonstration{
+    height: 200px;
+    width: 59%;
+    margin-left: 0;
+    margin-top: 0;
+    background-color: rgba(247, 247, 247, 0.8);
+    border-radius: 15px;
+    position: relative;
+}
+
+#practical_demonstration>img{
+    right: 30px;
+    top: 50px;
+    position: absolute;
+    width: 30%;
+}
+
+#practical_demonstration>div{
+    left: 30px;
+    bottom: 20px;
+    position: absolute;
+    width: 100%;
+}
+
+/* 课程获取 */
+#course_acquisition{
+    height: 200px;
+    width: 39%;
+    right: 0;
+    top: 0;
+    background-color: rgba(247, 247, 247, 0.8);
+    border-radius: 15px;
+    position: absolute;
+}
+
+#course_acquisition>img{
+    right: 30px;
+    top: 25px;
+    position: absolute;
+    width: 30%;
+}
+
+#course_acquisition>div{
+    left: 30px;
+    bottom: 20px;
+    position: absolute;
+    width: 100%;
+}
+
+/* 套件购买 */
+#kit_purchase{
+    height: 150px;
+    width: 39%;
+    right: 0;
+    top: 20px;
+    background-color: rgba(247, 247, 247, 0.8);
+    border-radius: 15px;
+    position: relative;
+}
+
+#kit_purchase>img{
+    right: 30px;
+    top: 25px;
+    position: absolute;
+    width: 30%;
+}
+
+#kit_purchase>div{
+    left: 30px;
+    bottom: 20px;
+    position: absolute;
+    width: 100%;
+}
+
+/* 模块资料 */
+#module_data{
+    height: 150px;
+    width: 59%;
+    right: 0;
+    bottom: -20px;
+    background-color: rgba(247, 247, 247, 0.8);
+    border-radius: 15px;
+    position: absolute;
+}
+
+#module_data>img{
+    right: 30px;
+    top: 25px;
+    position: absolute;
+    width: 20%;
+}
+
+#module_data>div{
+    left: 30px;
+    bottom: 20px;
+    position: absolute;
+    width: 100%;
+}
+
